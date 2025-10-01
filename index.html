@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Syntra — Infraestrutura em nuvem simples, segura e escalável</title>
+  <meta name="description" content="Syntra conecta pequenas empresas ao futuro com soluções em nuvem simples, seguras e escaláveis." />
+
+  <!-- SEO/social básico (pode ajustar depois) -->
+  <link rel="canonical" href="/" />
+  <meta property="og:title" content="Syntra — Soluções em Nuvem" />
+  <meta property="og:description" content="Infraestrutura em nuvem simples, segura e escalável." />
+  <meta property="og:type" content="website" />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="./styles/global.css" />
+
+  <!-- Favicon (substituir depois por um ícone real em /public/icons) -->
+  <link rel="icon" href="./public/icons/favicon.png" />
+</head>
+<body>
+  <!-- Link de pular para o conteúdo (acessibilidade) -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- =================== HEADER / NAV =================== -->
+  <header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a class="logo" href="/">Syntra</a>
+
+    <!-- Toggle mobile (checkbox hack) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir/fechar menu" aria-controls="primary-menu">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">Menu</span>
+    </label>
+
+    <nav class="site-nav" aria-label="Principal" id="primary-menu">
+      <ul class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="./pages/sobre.html">Sobre</a></li>
+        <li><a href="./pages/planos.html">Planos</a></li>
+        <li><a href="./pages/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- =================== MAIN =================== -->
+  <main id="conteudo" tabindex="-1">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container">
+        <h1>Leve sua empresa para a nuvem com a Syntra</h1>
+        <p class="lead">Infraestrutura em nuvem simples, segura e escalável — feita para pequenas empresas.</p>
+        <p><a class="btn btn-primary" href="./pages/planos.html">Começar agora</a></p>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS (3 cards) -->
+    <section class="services section" aria-labelledby="titulo-servicos">
+      <div class="container">
+        <h2 id="titulo-servicos">Soluções que impulsionam seu negócio</h2>
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>Hospedagem em Nuvem</h3>
+            <p>Rápida, estável e com alta disponibilidade.</p>
+          </article>
+          <article class="card">
+            <h3>Backup Automático</h3>
+            <p>Seus dados seguros com restauração em 1 clique.</p>
+          </article>
+          <article class="card">
+            <h3>Segurança Avançada</h3>
+            <p>Criptografia e monitoramento 24/7.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS (carrossel CSS virá depois) -->
+    <section class="testimonials section" aria-labelledby="titulo-depoimentos">
+      <div class="container">
+        <h2 id="titulo-depoimentos">O que nossos clientes dizem</h2>
+        <div class="testimonials-track">
+          <figure class="testimonial">
+            <blockquote>“A Syntra simplificou tudo. Migração em horas, não semanas.”</blockquote>
+            <figcaption>— Ana Souza, Loja Aurora</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>“Backup automático nos salvou de um desastre. Recomendamos!”</blockquote>
+            <figcaption>— Marcos Lima, Contábil ML</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>“Crescemos sem dor: a infraestrutura escala junto.”</blockquote>
+            <figcaption>— Carla Nogueira, Cursos CN</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta section">
+      <div class="container">
+        <h2>Pronto para evoluir com a nuvem?</h2>
+        <p><a class="btn btn-accent" href="./pages/contato.html">Fale com a Syntra</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <nav aria-label="Rodapé">
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="./pages/sobre.html">Sobre</a></li>
+          <li><a href="./pages/planos.html">Planos</a></li>
+          <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <small>© <span id="ano-atual">2025</span> Syntra — Projeto fictício para portfólio.</small>
+    </div>
+  </footer>
+</body>
+</html>
