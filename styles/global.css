@@ -392,3 +392,70 @@ p {
   box-shadow: 0 12px 32px rgba(0,0,0,.18);
   border-color: rgba(59,130,246,.35);
 }
+
+/* ================== TESTIMONIALS / CAROUSEL ================== */
+.testimonials h2 { margin-bottom: var(--space-3); }
+
+.testimonials-track {
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* desktop: 3 colunas lado a lado */
+@media (min-width: 900px) {
+  .testimonials-track { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* mobile/tablet: carrossel horizontal com scroll-snap */
+@media (max-width: 899px) {
+  .testimonials-track {
+    grid-auto-flow: column;
+    grid-auto-columns: min(85%, 28rem);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: var(--space-3);
+    padding-bottom: var(--space-2);
+    -webkit-overflow-scrolling: touch;
+  }
+  .testimonials-track::-webkit-scrollbar { height: .5rem; }
+  .testimonials-track::-webkit-scrollbar-thumb {
+    background: rgba(127,127,127,.35);
+    border-radius: 999px;
+  }
+}
+
+.testimonial {
+  scroll-snap-align: start;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-4);
+}
+@media (prefers-color-scheme: dark) {
+  .testimonial {
+    background: #242424;
+    border-color: rgba(255,255,255,.08);
+  }
+}
+
+.testimonial blockquote {
+  font-size: var(--step-0);
+  line-height: 1.6;
+  margin-bottom: var(--space-2);
+}
+.testimonial figcaption {
+  opacity: .8;
+}
+
+/* foco visível para teclado ao navegar pelos slides */
+.testimonial:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: calc(var(--radius) + 2px);
+}
+
+/* respeita pessoas que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  .testimonials-track { scroll-behavior: auto; }
+}
