@@ -6,24 +6,26 @@ O objetivo é treinar fundamentos de **HTML + CSS puro** (sem uso de JavaScript)
 
 ---
 
-## 🗂 Estrutura de pastas
+## 📂 Estrutura de pastas
+```bash
 syntra/
-├─ public/ → imagens e ícones
-│ ├─ images/
-│ └─ icons/
-├─ styles/ → arquivos CSS
-│ ├─ global.css → reset, tokens/variáveis, utilitários
-│ ├─ theme.css → dark/light mode e componentes
-│ └─ print.css → estilo para impressão
-├─ pages/ → páginas internas
-│ ├─ sobre.html
-│ ├─ planos.html
-│ └─ contato.html
-├─ index.html → Home
-├─ 404.html → página de erro personalizada
-├─ robots.txt → instruções SEO
-├─ sitemap.xml → mapa do site
-└─ README.md → documentação do projeto
+├─ public/          # imagens e ícones
+│  ├─ images/
+│  └─ icons/
+├─ styles/          # arquivos CSS
+│  ├─ global.css    # reset, tokens/variáveis, utilitários
+│  ├─ theme.css     # dark/light mode e componentes
+│  └─ print.css     # estilo para impressão
+├─ pages/           # páginas internas
+│  ├─ sobre.html
+│  ├─ planos.html
+│  └─ contato.html
+├─ index.html       # Home
+├─ 404.html         # página de erro personalizada
+├─ robots.txt       # instruções SEO
+├─ sitemap.xml      # mapa do site
+└─ README.md        # documentação do projeto
+
 
 ---
 
